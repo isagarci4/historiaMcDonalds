@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'author_card.dart';
 import 'gpsdomundo_theme.dart';
 
 class Card2 extends StatelessWidget {
@@ -16,40 +15,19 @@ class Card2 extends StatelessWidget {
         decoration: const BoxDecoration(
           image: DecorationImage(
             image: NetworkImage(
-                'https://st.depositphotos.com/1036813/1888/i/450/depositphotos_18888749-stock-photo-mont-blanc-mountain-massif-view.jpg'),
+                'https://aventurasnahistoria.uol.com.br/media/_versions/mcondalammda_widelg.jpg'),
             fit: BoxFit.cover,
           ),
           borderRadius: BorderRadius.all(Radius.circular(10.0)),
         ),
         child: Column(children: [
-          const AuthorCard(
-            authorName: 'Adam Simon',
-            title: 'Software Engineer',
-            imageProvider: NetworkImage(
-                'https://www.denofgeek.com/wp-content/uploads/2021/09/Anthony-Mackie.png?fit=1200%2C883'),
+          Positioned(
+            top: 10,
+            child: Text(
+              'Primeiro Mc',
+              style: GpsdoMundoTheme.darkTextTheme.headline1,
+            ),
           ),
-          Expanded(
-              child: Stack(children: [
-            Positioned(
-              bottom: 16,
-              right: 16,
-              child: Text(
-                'Rio',
-                style: GpsdoMundoTheme.lightTextTheme.headline1,
-              ),
-            ),
-            Positioned(
-              bottom: 70,
-              left: 16,
-              child: RotatedBox(
-                quarterTurns: 3,
-                child: Text(
-                  'Pão de Açucar',
-                  style: GpsdoMundoTheme.lightTextTheme.headline1,
-                ),
-              ),
-            ),
-          ]))
         ]),
       ),
     );

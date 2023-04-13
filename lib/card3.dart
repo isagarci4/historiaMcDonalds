@@ -16,7 +16,7 @@ class Card3 extends StatelessWidget {
         decoration: const BoxDecoration(
           image: DecorationImage(
             image: NetworkImage(
-                'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/3b/fe/d5/parque-lage.jpg?w=1200&h=1200&s=1'),
+                'https://s2.glbimg.com/oCuqUTStRM4CDOVFgEPEWzO2fAE=/0x0:512x309/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2020/R/8/GnGPa5Q4W0ZcfNmM0a7w/unnamed.jpg'),
             fit: BoxFit.cover,
           ),
           borderRadius: BorderRadius.all(Radius.circular(10.0)),
@@ -40,7 +40,7 @@ class Card3 extends StatelessWidget {
                     ),
                     const SizedBox(height: 8),
                     Text(
-                      'Guia Turístico',
+                      'Cardápio',
                       style: GpsdoMundoTheme.darkTextTheme.headline2,
                     ),
                     const SizedBox(height: 30),
@@ -53,7 +53,7 @@ class Card3 extends StatelessWidget {
                     runSpacing: 12,
                     children: [
                   Chip(
-                    label: Text('Natureza',
+                    label: Text('Big Mac',
                         style: GpsdoMundoTheme.darkTextTheme.bodyText1),
                     backgroundColor: Colors.black.withOpacity(0.7),
                     onDeleted: () {
@@ -61,7 +61,7 @@ class Card3 extends StatelessWidget {
                     },
                   ),
                   Chip(
-                    label: Text('Água',
+                    label: Text('Big Tasty',
                         style: GpsdoMundoTheme.darkTextTheme.bodyText1),
                     backgroundColor: Colors.black.withOpacity(0.7),
                     onDeleted: () {
@@ -69,13 +69,45 @@ class Card3 extends StatelessWidget {
                     },
                   ),
                   Chip(
-                    label: Text('Arquitetura',
+                    label: Text('McMelt',
                         style: GpsdoMundoTheme.darkTextTheme.bodyText1),
                     backgroundColor: Colors.black.withOpacity(0.7),
                     onDeleted: () {
                       log('delete');
                     },
-                  )
+                  ),
+                  Chip(
+                    label: Text('Quarteirão',
+                        style: GpsdoMundoTheme.darkTextTheme.bodyText1),
+                    backgroundColor: Colors.black.withOpacity(0.7),
+                    onDeleted: () {
+                      log('delete');
+                    },
+                  ),
+                  Chip(
+                    label: Text('McPicanha',
+                        style: GpsdoMundoTheme.darkTextTheme.bodyText1),
+                    backgroundColor: Colors.black.withOpacity(0.7),
+                    onDeleted: () {
+                      log('delete');
+                    },
+                  ),
+                  Chip(
+                    label: Text('McChicken',
+                        style: GpsdoMundoTheme.darkTextTheme.bodyText1),
+                    backgroundColor: Colors.black.withOpacity(0.7),
+                    onDeleted: () {
+                      log('delete');
+                    },
+                  ),
+                  Chip(
+                    label: Text('McFish',
+                        style: GpsdoMundoTheme.darkTextTheme.bodyText1),
+                    backgroundColor: Colors.black.withOpacity(0.7),
+                    onDeleted: () {
+                      log('delete');
+                    },
+                  ),
                 ]))
           ],
         ),
